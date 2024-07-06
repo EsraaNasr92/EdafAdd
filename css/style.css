@@ -10853,6 +10853,32 @@ color: #fff;
 
 @media (min-width: 1400px) {
     .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
-      max-width: 1720px;
+        max-width: 1720px;
     }
+}
+/* Ensure the call section is hidden by default */
+.header-cta.mobile-only {
+    display: none;
+}
+
+/* Display the call section only on mobile devices */
+@media (max-width: 767.98px) {
+    .header-cta.mobile-only {
+        display: block;
+    }
+}
+
+/* Hide the call section on larger screens */
+@media (min-width: 768px) {
+    .header-cta.mobile-only {
+        display: none;
+    }
+}
+.printers-table {
+    width: 100%;
+    line-height: 30px;
+}
+.printers-table tr td {
+    border: 1px solid #d3d3d3;
+    padding: 10px;
 }
